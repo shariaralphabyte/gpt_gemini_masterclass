@@ -5,30 +5,30 @@ export default function Home() {
   return (
     <div className="flex-1 overflow-y-auto flex flex-col items-center justify-center p-8 text-center" lang="bn">
       {/* Hero Section */}
-      <div className="max-w-3xl space-y-8">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/20 text-primary text-xs font-semibold uppercase tracking-widest mb-4">
+      <div className="max-w-3xl space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-4">
           <Sparkles size={14} className="animate-pulse" /> Frontier AI Learning Path
         </div>
         
-        <h1 className="text-6xl md:text-7xl font-bold tracking-tight">
+        <h1 className="text-6xl md:text-8xl font-black tracking-tight text-slate-900 leading-[1.1]">
           <span className="gradient-text">0 to Modern</span> <br />
-          <span className="glow-text">Agentic AI</span>
+          <span className="text-slate-800">Agentic AI</span>
         </h1>
         
-        <p className="text-xl text-dim max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed font-medium">
           মেশিন লার্নিং-এর জগত এখন আপনার হাতের মুঠোয়। টেকনিক্যাল বা নন-টেকনিক্যাল—সবার জন্য সহজভাবে ডিজাইন করা হয়েছে এই মাস্টারক্লাস।
         </p>
 
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-center gap-6">
           <Link 
             href="/lesson/ai-basics" 
-            className="px-8 py-4 rounded-xl bg-primary text-background font-bold text-lg hover:scale-105 transition-transform shadow-[0_0_30px_rgba(0,242,255,0.3)]"
+            className="px-10 py-5 rounded-2xl bg-primary text-white font-bold text-lg hover:scale-105 transition-all shadow-[0_10px_30px_rgba(37,99,235,0.3)] hover:shadow-[0_15px_35px_rgba(37,99,235,0.4)]"
           >
             কোর্সটি শুরু করুন
           </Link>
           <a 
             href="https://github.com/shariaralphabyte/gpt_gemini_masterclass" 
-            className="px-8 py-4 rounded-xl glass border border-white/10 text-white font-medium hover:bg-white/5 transition-colors"
+            className="px-10 py-5 rounded-2xl glass border border-slate-200 text-slate-700 font-bold hover:bg-slate-50 transition-all flex items-center gap-2"
           >
             GitHub-এ দেখুন
           </a>
@@ -36,7 +36,7 @@ export default function Home() {
       </div>
 
       {/* Feature Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mt-24">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mt-28">
         {[
           {
             icon: <Brain className="text-primary" />,
@@ -54,12 +54,12 @@ export default function Home() {
             desc: "আপনার এআই-কে হাত এবং চোখ দিন যাতে সে নিজে কাজ করতে পারে।"
           }
         ].map((feature, i) => (
-          <div key={i} className="glass p-8 rounded-2xl text-left hover:border-white/20 transition-colors group">
-            <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <div key={i} className="glass p-10 rounded-3xl text-left border-black/[0.03] hover:border-primary/20 transition-all group hover:-translate-y-2">
+            <div className="w-14 h-14 rounded-2xl bg-slate-50 flex items-center justify-center mb-8 group-hover:bg-primary/5 transition-colors shadow-inner">
               {feature.icon}
             </div>
-            <h3 className="text-lg font-bold mb-3">{feature.title}</h3>
-            <p className="text-sm text-dim leading-relaxed">{feature.desc}</p>
+            <h3 className="text-xl font-black mb-4 text-slate-900 leading-tight">{feature.title}</h3>
+            <p className="text-base text-slate-500 leading-relaxed font-medium">{feature.desc}</p>
           </div>
         ))}
       </div>

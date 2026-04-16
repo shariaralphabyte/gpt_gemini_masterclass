@@ -7,16 +7,17 @@
 }
 
 :root {
-  --background: #050505;
-  --foreground: #ffffff;
-  --card-bg: rgba(20, 20, 25, 0.7);
-  --primary: #00f2ff;
-  --secondary: #7000ff;
-  --accent: #ff007a;
-  --text-dim: #a0a0a0;
-  --border: rgba(255, 255, 255, 0.1);
-  --glass: rgba(255, 255, 255, 0.03);
-  --glass-border: rgba(255, 255, 255, 0.08);
+  --background: #f9fafb;
+  --foreground: #111827;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --primary: #2563eb;
+  --secondary: #7c3aed;
+  --accent: #db2777;
+  --text-dim: #6b7280;
+  --border: #e5e7eb;
+  --glass: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 0, 0, 0.05);
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 @theme inline {
@@ -32,32 +33,35 @@ body {
   color: var(--foreground);
   font-family: 'Inter', system-ui, sans-serif;
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(112, 0, 255, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 100% 100%, rgba(0, 242, 255, 0.1) 0%, transparent 40%);
+    radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(124, 58, 237, 0.03) 0%, transparent 40%);
   background-attachment: fixed;
   min-height: 100vh;
 }
 
 [lang="bn"] {
   font-family: 'Noto Serif Bengali', serif;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .glass {
   background: var(--glass);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow);
 }
 
 .glow-text {
-  text-shadow: 0 0 20px rgba(0, 242, 255, 0.5);
+  /* Reduced glow for light mode clarity */
+  text-shadow: 0 0 1px rgba(37, 99, 235, 0.2);
 }
 
 .gradient-text {
   background: linear-gradient(90deg, var(--primary), var(--secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 800;
 }
 
 ::-webkit-scrollbar {
@@ -69,11 +73,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--glass-border);
+  background: #cbd5e1;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--text-dim);
+  background: #94a3b8;
 }
+
 
