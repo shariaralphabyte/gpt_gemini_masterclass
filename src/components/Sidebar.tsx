@@ -62,8 +62,7 @@ export default function Sidebar({ weeks, onNoteClick }: SidebarProps) {
       </nav>
 
       <div className="p-6 border-t border-black/5 text-[10px] text-dim leading-relaxed">
-        Created for <span className="font-bold text-slate-800">360infotech</span> &copy; 2026 shariar99<br/>
-        Designed for the Bangladeshi Tech Community • 2026
+        Created by <span className="font-bold text-slate-800">shariar99</span> &copy; 2026 <br/>
       </div>
     </div>
   );

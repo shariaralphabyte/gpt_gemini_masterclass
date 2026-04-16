@@ -13,7 +13,7 @@ const notoBengali = Noto_Serif_Bengali({
 });
 
 export const metadata: Metadata = {
-  title: "AI Masterclass | By 360infotech",
+  title: "AI Masterclass | By shariar99",
   description: "Learn Machine Learning from 0 to Agentic AI with frontier models.",
 };
 
