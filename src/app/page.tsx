@@ -10,7 +10,7 @@ export default function Home() {
           <Sparkles size={14} className="animate-pulse" /> Frontier AI Learning Path
         </div>
         
-        <h1 className="text-6xl md:text-8xl font-black tracking-tight text-slate-900 leading-[1.1]">
+        <h1 className="text-4xl md:text-8xl font-black tracking-tight text-slate-900 leading-[1.1]">
           <span className="gradient-text">0 to Modern</span> <br />
           <span className="text-slate-800">Agentic AI</span>
         </h1>
@@ -21,14 +21,14 @@ export default function Home() {
 
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-center gap-6">
           <Link 
-            href="/lesson/ai-basics" 
-            className="px-10 py-5 rounded-2xl bg-primary text-white font-bold text-lg hover:scale-105 transition-all shadow-[0_10px_30px_rgba(37,99,235,0.3)] hover:shadow-[0_15px_35px_rgba(37,99,235,0.4)]"
+            href="/lesson/01_ai_fundamentals" 
+            className="px-8 md:px-10 py-4 md:py-5 rounded-2xl bg-primary text-white font-bold text-base md:text-lg hover:scale-105 transition-all shadow-[0_10px_30px_rgba(37,99,235,0.3)] hover:shadow-[0_15px_35px_rgba(37,99,235,0.4)] w-full sm:w-auto"
           >
             কোর্সটি শুরু করুন
           </Link>
           <a 
             href="https://github.com/shariaralphabyte/gpt_gemini_masterclass" 
-            className="px-10 py-5 rounded-2xl glass border border-slate-200 text-slate-700 font-bold hover:bg-slate-50 transition-all flex items-center gap-2"
+            className="px-8 md:px-10 py-4 md:py-5 rounded-2xl glass border border-slate-200 text-slate-700 font-bold hover:bg-slate-50 transition-all flex items-center justify-center gap-2 w-full sm:w-auto"
           >
             GitHub-এ দেখুন
           </a>

@@ -24,15 +24,15 @@ export default function LessonPlayer({ lesson, navigation }: LessonPlayerProps) 
   return (
     <div className="flex-1 overflow-y-auto" lang="bn">
       {/* Header Area */}
-      <div className="sticky top-0 z-10 glass px-8 py-6 flex items-center justify-between border-b border-black/5 shadow-sm">
+      <div className="sticky top-0 z-10 glass px-4 md:px-8 py-4 md:py-6 flex items-center justify-between border-b border-black/5 shadow-sm">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary border border-primary/20">
-            <BookOpen size={20} />
+          <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg md:rounded-xl bg-primary/10 flex items-center justify-center text-primary border border-primary/20">
+            <BookOpen size={18} />
           </div>
           <div>
-            <h2 className="text-xl font-bold text-slate-900">{lesson.title}</h2>
-            <div className="text-[10px] text-dim uppercase tracking-widest mt-0.5 font-bold">
-              Agentic AI Masterclass &bull; Lesson {lesson.id}
+            <h2 className="text-lg md:text-xl font-bold text-slate-900 line-clamp-1">{lesson.title}</h2>
+            <div className="text-[9px] md:text-[10px] text-dim uppercase tracking-widest mt-0.5 font-bold">
+              AI Masterclass &bull; shariar99
             </div>
           </div>
         </div>
@@ -59,16 +59,16 @@ export default function LessonPlayer({ lesson, navigation }: LessonPlayerProps) 
       </div>
 
       {/* Content Area */}
-      <div className="max-w-4xl mx-auto px-8 py-12">
+      <div className="max-w-4xl mx-auto px-4 md:px-8 py-8 md:py-12">
         <article className="prose prose-slate max-w-none">
           <ReactMarkdown 
             remarkPlugins={[remarkGfm, remarkMath]}
             rehypePlugins={[rehypeKatex]}
             components={{
-              h1: ({node, ...props}) => <h1 className="text-4xl font-black mb-8 text-slate-900 tracking-tight" {...props} />,
-              h2: ({node, ...props}) => <h2 className="text-2xl font-bold mt-12 mb-6 text-slate-800 border-b border-slate-100 pb-3" {...props} />,
-              h3: ({node, ...props}) => <h3 className="text-xl font-bold mt-8 mb-4 text-slate-800" {...props} />,
-              p: ({node, ...props}) => <p className="text-lg leading-relaxed text-slate-700 mb-6" {...props} />,
+              h1: ({node, ...props}) => <h1 className="text-3xl md:text-4xl font-black mb-6 md:mb-8 text-slate-900 tracking-tight" {...props} />,
+              h2: ({node, ...props}) => <h2 className="text-xl md:text-2xl font-bold mt-10 md:mt-12 mb-4 md:mb-6 text-slate-800 border-b border-slate-100 pb-3" {...props} />,
+              h3: ({node, ...props}) => <h3 className="text-lg md:text-xl font-bold mt-6 md:mt-8 mb-3 md:mb-4 text-slate-800" {...props} />,
+              p: ({node, ...props}) => <p className="text-base md:text-lg leading-relaxed text-slate-700 mb-6" {...props} />,
               li: ({node, ...props}) => <li className="text-slate-700 mb-2" {...props} />,
               code: ({node, inline, className, children, ...props}: any) => {
                 const match = /language-(\w+)/.exec(className || '');

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Noto_Serif_Bengali } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
+import MainLayout from "@/components/MainLayout";
 import courseManifest from "@/data/course_manifest.json";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -12,7 +13,7 @@ const notoBengali = Noto_Serif_Bengali({
 });
 
 export const metadata: Metadata = {
-  title: "Agentic AI Masterclass | By 360infotech",
+  title: "AI Masterclass | By 360infotech",
   description: "Learn Machine Learning from 0 to Agentic AI with frontier models.",
 };
 
@@ -23,15 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="bn" className={`${inter.variable} ${notoBengali.variable}`}>
-      <body className="flex h-screen overflow-hidden">
-        <Sidebar weeks={courseManifest.weeks} />
-        <main className="flex-1 flex flex-col min-w-0 relative">
+      <body className="antialiased">
+        <MainLayout weeks={courseManifest.weeks}>
           {children}
-          
-          {/* Subtle background glow */}
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 blur-[120px] -z-10 rounded-full" />
-          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary/5 blur-[100px] -z-10 rounded-full" />
-        </main>
+        </MainLayout>
       </body>
     </html>
   );
