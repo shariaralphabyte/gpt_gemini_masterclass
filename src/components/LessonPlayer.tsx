@@ -2,6 +2,9 @@
 
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 import { ChevronLeft, ChevronRight, BookOpen } from 'lucide-react';
 import Link from 'next/link';
 
@@ -59,7 +62,8 @@ export default function LessonPlayer({ lesson, navigation }: LessonPlayerProps) 
       <div className="max-w-4xl mx-auto px-8 py-12">
         <article className="prose prose-slate max-w-none">
           <ReactMarkdown 
-            remarkPlugins={[remarkGfm]}
+            remarkPlugins={[remarkGfm, remarkMath]}
+            rehypePlugins={[rehypeKatex]}
             components={{
               h1: ({node, ...props}) => <h1 className="text-4xl font-black mb-8 text-slate-900 tracking-tight" {...props} />,
               h2: ({node, ...props}) => <h2 className="text-2xl font-bold mt-12 mb-6 text-slate-800 border-b border-slate-100 pb-3" {...props} />,

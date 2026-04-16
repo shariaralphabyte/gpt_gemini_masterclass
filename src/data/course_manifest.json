@@ -1,112 +1,36 @@
 {
-  "title": "0 to Modern Agentic AI",
+  "courseTitle": "Build Your Own LLM, Chatbot, and AI Agent from Scratch",
   "weeks": [
     {
-      "id": "week-0",
-      "title": "Module 0: AI Basics for Everyone",
-      "description": "For absolute beginners: What is AI and why does it matter?",
+      "id": "module-1-5",
+      "title": "Module 1-5: Foundations of AI",
       "lessons": [
-        {
-          "id": "0-1",
-          "title": "What is an LLM? (কম্পিউটার কীভাবে শেখে?)",
-          "slug": "ai-basics",
-          "file": "00_week0_basics.md"
-        },
-        {
-          "id": "0-2",
-          "title": "The Power of Prompts (প্রম্পট ইঞ্জিনিয়ারিং)",
-          "slug": "prompt-power",
-          "file": "00_week0_prompts.md"
-        }
+        { "id": "1", "slug": "01_ai_fundamentals", "title": "AI Fundamentals" },
+        { "id": "2", "slug": "02_cnn_to_transformer", "title": "CNN to Transformer" },
+        { "id": "3", "slug": "03_neural_network_scratch", "title": "Neural Network from Scratch" },
+        { "id": "4", "slug": "04_tokenization", "title": "Tokenization & Text Processing" },
+        { "id": "5", "slug": "05_transformer_scratch", "title": "Transformer from Scratch" }
       ]
     },
     {
-      "id": "week-1",
-      "title": "Week 1: NLP & Transformers",
-      "description": "The foundation of modern language models.",
+      "id": "module-6-10",
+      "title": "Module 6-10: LLM & Agents",
       "lessons": [
-        {
-          "id": "1-1",
-          "title": "NLP Magic - How Computers Read",
-          "slug": "nlp-magic",
-          "file": "01_week1_nlp_magic.md"
-        },
-        {
-          "id": "1-2",
-          "title": "Transformer - The Architecture",
-          "slug": "transformers",
-          "file": "02_week1_transformers.md"
-        }
+        { "id": "6", "slug": "06_train_small_llm", "title": "Train Your Own Small LLM" },
+        { "id": "7", "slug": "07_how_model_thinks", "title": "How Model Thinks" },
+        { "id": "8", "slug": "08_build_chatbot", "title": "Build Chatbot (No API)" },
+        { "id": "9", "slug": "09_build_agent", "title": "Build AI Agent (From Scratch)" },
+        { "id": "10", "slug": "10_add_tools_to_agent", "title": "Add Tools to Agent" }
       ]
     },
     {
-      "id": "week-2",
-      "title": "Week 2: Scaling Up",
-      "description": "Training GPT and Gemini.",
+      "id": "module-11-14",
+      "title": "Module 11-14: Safety & Advanced Topics",
       "lessons": [
-        {
-          "id": "2-1",
-          "title": "Pre-training - Learning from Internet",
-          "slug": "pretraining",
-          "file": "03_week2_pretraining.md"
-        },
-        {
-          "id": "2-2",
-          "title": "Mixture of Experts (MoE)",
-          "slug": "moe",
-          "file": "04_week2_moe.md"
-        }
-      ]
-    },
-    {
-      "id": "week-3",
-      "title": "Week 3: Post-Training",
-      "description": "Making models helpful and safe.",
-      "lessons": [
-        {
-          "id": "3-1",
-          "title": "Supervised Fine-Tuning (SFT)",
-          "slug": "sft",
-          "file": "05_week3_sft.md"
-        },
-        {
-          "id": "3-2",
-          "title": "RLHF & DPO",
-          "slug": "rlhf-dpo",
-          "file": "06_week3_rlhf_dpo.md"
-        }
-      ]
-    },
-    {
-      "id": "week-4",
-      "title": "Week 4: Agentic AI",
-      "description": "The peak of modern AI technology.",
-      "lessons": [
-        {
-          "id": "4-1",
-          "title": "Intro to Agentic AI",
-          "slug": "agents-intro",
-          "file": "07_week4_agents_intro.md"
-        },
-        {
-          "id": "4-2",
-          "title": "Tool Calling - Giving Agents Hands",
-          "slug": "tool-calling",
-          "file": "08_week4_tool_calling.md"
-        }
-      ]
-    },
-    {
-      "id": "project",
-      "title": "Final Project: Your Own Agent",
-      "description": "Build and deploy your personal AI companion.",
-      "lessons": [
-        {
-          "id": "p-1",
-          "title": "Building the Personal Agent",
-          "slug": "final-project",
-          "file": "09_project_agent.md"
-        }
+        { "id": "11", "slug": "11_safety_ethics", "title": "Safety & Ethics" },
+        { "id": "12", "slug": "12_improvement_techniques", "title": "Improvement Techniques" },
+        { "id": "13", "slug": "13_projects", "title": "Semester Projects" },
+        { "id": "14", "slug": "14_engineering_mindset", "title": "Engineering Mindset" }
       ]
     }
   ]
