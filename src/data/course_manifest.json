@@ -1,0 +1,113 @@
+{
+  "title": "0 to Modern Agentic AI",
+  "weeks": [
+    {
+      "id": "week-0",
+      "title": "Module 0: AI Basics for Everyone",
+      "description": "For absolute beginners: What is AI and why does it matter?",
+      "lessons": [
+        {
+          "id": "0-1",
+          "title": "What is an LLM? (কম্পিউটার কীভাবে শেখে?)",
+          "slug": "ai-basics",
+          "file": "00_week0_basics.md"
+        },
+        {
+          "id": "0-2",
+          "title": "The Power of Prompts (প্রম্পট ইঞ্জিনিয়ারিং)",
+          "slug": "prompt-power",
+          "file": "00_week0_prompts.md"
+        }
+      ]
+    },
+    {
+      "id": "week-1",
+      "title": "Week 1: NLP & Transformers",
+      "description": "The foundation of modern language models.",
+      "lessons": [
+        {
+          "id": "1-1",
+          "title": "NLP Magic - How Computers Read",
+          "slug": "nlp-magic",
+          "file": "01_week1_nlp_magic.md"
+        },
+        {
+          "id": "1-2",
+          "title": "Transformer - The Architecture",
+          "slug": "transformers",
+          "file": "02_week1_transformers.md"
+        }
+      ]
+    },
+    {
+      "id": "week-2",
+      "title": "Week 2: Scaling Up",
+      "description": "Training GPT and Gemini.",
+      "lessons": [
+        {
+          "id": "2-1",
+          "title": "Pre-training - Learning from Internet",
+          "slug": "pretraining",
+          "file": "03_week2_pretraining.md"
+        },
+        {
+          "id": "2-2",
+          "title": "Mixture of Experts (MoE)",
+          "slug": "moe",
+          "file": "04_week2_moe.md"
+        }
+      ]
+    },
+    {
+      "id": "week-3",
+      "title": "Week 3: Post-Training",
+      "description": "Making models helpful and safe.",
+      "lessons": [
+        {
+          "id": "3-1",
+          "title": "Supervised Fine-Tuning (SFT)",
+          "slug": "sft",
+          "file": "05_week3_sft.md"
+        },
+        {
+          "id": "3-2",
+          "title": "RLHF & DPO",
+          "slug": "rlhf-dpo",
+          "file": "06_week3_rlhf_dpo.md"
+        }
+      ]
+    },
+    {
+      "id": "week-4",
+      "title": "Week 4: Agentic AI",
+      "description": "The peak of modern AI technology.",
+      "lessons": [
+        {
+          "id": "4-1",
+          "title": "Intro to Agentic AI",
+          "slug": "agents-intro",
+          "file": "07_week4_agents_intro.md"
+        },
+        {
+          "id": "4-2",
+          "title": "Tool Calling - Giving Agents Hands",
+          "slug": "tool-calling",
+          "file": "08_week4_tool_calling.md"
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Final Project: Your Own Agent",
+      "description": "Build and deploy your personal AI companion.",
+      "lessons": [
+        {
+          "id": "p-1",
+          "title": "Building the Personal Agent",
+          "slug": "final-project",
+          "file": "09_project_agent.md"
+        }
+      ]
+    }
+  ]
+}
