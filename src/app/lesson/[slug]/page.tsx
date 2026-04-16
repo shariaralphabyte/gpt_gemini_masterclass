@@ -20,7 +20,7 @@ async function getLessonData(slug: string) {
   if (!lessonEntry) return null;
 
   try {
-    const filePath = path.join(process.cwd(), "src/data/lessons", lessonEntry.file.replace(".md", ".json"));
+    const filePath = path.join(process.cwd(), "src/data/lessons", lessonEntry.slug + ".json");
     const fileContents = fs.readFileSync(filePath, "utf8");
     return {
       lesson: JSON.parse(fileContents),
